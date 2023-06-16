@@ -25,7 +25,7 @@ This repository is for communication between different platforms using WebSocket
    pip install websockets
    ```
 
-(4. for the server) Install ROS. Refer to the [ROS official website](http://wiki.ros.org/Distributions) for installation instructions. (In this version, Linux 18.04 LTS Melodic was used. Therefore, the operation on other platforms or distributions is not guaranteed.)
+4. (for the server) Install ROS. Refer to the [ROS official website](http://wiki.ros.org/Distributions) for installation instructions. (In this version, Linux 18.04 LTS Melodic was used. Therefore, the operation on other platforms or distributions is not guaranteed.)
 
 ## Overview
 - 'server.py' is a server that receives messages and converts them into coordinates to send move commands to the robot using a topic.
