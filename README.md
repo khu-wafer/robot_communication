@@ -51,7 +51,7 @@ if message == '1':
 You can refer to the [SLAM Repository](https://github.com/khu-wafer/robot_slam) for robot coordinates.
 
 ### Server
-5-1. Run roscore
+5-1. Run roscore.
 ```
 roscore
 ```
