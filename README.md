@@ -52,9 +52,9 @@ You can refer to the [SLAM Repository](https://github.com/khu-wafer/robot_slam) 
 
 ### Server
 5-1. Run roscore
-'''
+```
 roscore
-'''
+```
 
 5-2. Open a terminal, navigate to the location of server.py, and run the server. If the following message appears, the server is running successfully.
 ```
