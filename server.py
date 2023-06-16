@@ -40,9 +40,9 @@ def publish_rostopic_command(x, y, z, w):
 
 async def run_server():
     # Replace {YOUR_IP} with your IP address.
-    # example 192.11.22.33
+    # example : "192.11.22.33"
     # 8080 is port number. You can change it if you want
-    async with websockets.serve(server, {YOUR_IP}, 8080):
+    async with websockets.serve(server, "{YOUR_IP}", 8080):
         print("Server is running...")
         await asyncio.Future()  # Keep the server running
 
