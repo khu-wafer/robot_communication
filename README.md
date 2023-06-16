@@ -51,7 +51,12 @@ if message == '1':
 You can refer to the [SLAM Repository](https://github.com/khu-wafer/robot_slam) for robot coordinates.
 
 ### Server
-5-1. Open a terminal, navigate to the location of server.py, and run the server. If the following message appears, the server is running successfully.
+5-1. Run roscore
+'''
+roscore
+'''
+
+5-2. Open a terminal, navigate to the location of server.py, and run the server. If the following message appears, the server is running successfully.
 ```
 python server.py
 ```
@@ -60,7 +65,7 @@ python server.py
 </p>
 
 ### Client
-5-2. Open a terminal, navigate to the location of client.py, and run the client. If the following message appears, the client is running successfully.
+5-3. Open a terminal, navigate to the location of client.py, and run the client. If the following message appears, the client is running successfully.
 ```
 python client.py
 ```
@@ -68,13 +73,13 @@ python client.py
 <img src="/images/client_1.png" width="450" />
 </p>
 
-5-3. Enter the message you want to send.
+5-4. Enter the message you want to send.
 <p align="center">
 <img src="/images/client_2.png" width="450" />
 </p>
 
 ### Server
-5-4. If the message is successfully received, the server will display the message as shown below.
+5-5. If the message is successfully received, the server will display the message as shown below.
 <p align="center">
 <img src="/images/server_2.png" width="450" />
 </p>
