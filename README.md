@@ -73,6 +73,7 @@ python client.py
 <img src="/images/client_2.png" width="450" />
 </p>
 
+### Server
 5-4. If the message is successfully received, the server will display the message as shown below.
 <p align="center">
 <img src="/images/server_2.png" width="450" />
