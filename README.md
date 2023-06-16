@@ -25,23 +25,25 @@ This repository is for communication between different platforms using WebSocket
    pip install websockets
    ```
 
-4. (for the server) Install ROS. Refer to the [ROS official website](http://wiki.ros.org/Distributions) for installation instructions. (In this version, Linux 18.04 LTS Melodic was used. Therefore, the operation on other platforms or distributions is not guaranteed.)
+4. (for the server) Install ROS. Refer to the [ROS official website](http://wiki.ros.org/Distributions) for installation instructions. (In this version, Linux 18.04 LTS and Melodic was used. Therefore, the operation on other platforms or distributions is not guaranteed.)
 
 ## Overview
 - 'server.py' is a server that receives messages and converts them into coordinates to send move commands to the robot using a topic.
 - 'client.py' is a client for testing the communication. It is a simple client that sends any input to the server.
 
-Please run the server and client on the desired platforms, even if they are the same.
+Please run the server and client on the desired platforms.
 
 ## How to Run
-1. Clone this repository to your desired location.
+1. Connect to the same Wi-Fi network. Please note that it may not work on networks with certain security, such as those in secure company or institutional environments. It is recommended to use a personal network.
+
+2. Clone this repository to your desired location.
 ```
 git clone https://github.com/khu-wafer/robot_communication
 ```
 
-2. Navigate to the downloaded repository and modify the {YOUR_IP} in server.py and client.py. Replace {YOUR_IP} with your actual IP address. For example, if your IP address is 123.45.6.78, replace {YOUR_IP} with 123.45.6.78
+3. Navigate to the downloaded repository and modify the {YOUR_IP} in server.py and client.py. Replace {YOUR_IP} with your actual IP address. For example, if your IP address is 123.45.6.78, replace {YOUR_IP} with 123.45.6.78
 
-3. Modify the messages and coordinates in server.py according to your needs. For example, if you want the robot to move to specific coordinates when receiving the message '1', modify the code as follows:
+4. Modify the messages and coordinates in server.py according to your needs. For example, if you want the robot to move to specific coordinates when receiving the message '1', modify the code as follows:
 ```python
 if message == '1':
     publish_rostopic_command(-0.587, 2.892, 0.177, 0.984)
@@ -49,7 +51,7 @@ if message == '1':
 You can refer to the [SLAM Repository](https://github.com/khu-wafer/robot_slam) for robot coordinates.
 
 ### Server
-4-1. Open a terminal, navigate to the location of server.py, and run the server. If the following message appears, the server is running successfully.
+5-1. Open a terminal, navigate to the location of server.py, and run the server. If the following message appears, the server is running successfully.
 ```
 python server.py
 ```
@@ -58,7 +60,7 @@ python server.py
 </p>
 
 ### Client
-4-2. Open a terminal, navigate to the location of client.py, and run the client. If the following message appears, the client is running successfully.
+5-2. Open a terminal, navigate to the location of client.py, and run the client. If the following message appears, the client is running successfully.
 ```
 python client.py
 ```
@@ -66,12 +68,12 @@ python client.py
 <img src="/images/client_1.png" width="450" />
 </p>
 
-4-3. Enter the message you want to send.
+5-3. Enter the message you want to send.
 <p align="center">
 <img src="/images/client_2.png" width="450" />
 </p>
 
-4-4. If the message is successfully received, the server will display the message as shown below.
+5-4. If the message is successfully received, the server will display the message as shown below.
 <p align="center">
 <img src="/images/server_2.png" width="450" />
 </p>
