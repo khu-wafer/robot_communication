@@ -1,7 +1,7 @@
 # robot_communication
 
 ## Summary
-This repository is for communication between different platforms using WebSocket. The purpose of this repository is to open a server on a Linux-based platform and run a client on other platforms (Windows, Mac, Android) to send messages to Linux. The messages are then converted to ROS coordinates and sent as commands to control the robot through ROS topics. In other words, it helps to control the robot from other platforms. For more details, please refer to this [YouTube video](https://youtu.be/7_lBd4AszNM). In the video, the implementation allows controlling the robot by pressing buttons in an app.
+This repository is for communication between different platforms using WebSocket. The purpose of this repository is to open a server on a Linux-based platform and run a client on other platforms (Windows, Mac, Android) to send messages to Linux. The messages are then converted to ROS coordinates and sent as commands to control the robot through ROS topics. In other words, it helps to control the robot from other platforms. For more details, please refer to this [YouTube video](https://youtu.be/7_lBd4AszNM) and [Notion](https://www.notion.so/robotiz/Smart-Fulfillment-Center-8be6ed65c21d49b2bb9968b0afbfb8cf). In the video, the implementation allows controlling the robot by pressing buttons in an app.
 
 ## Set up
 1. This environment requires Python 3.x or later.
